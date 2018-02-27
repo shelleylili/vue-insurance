@@ -1,6 +1,6 @@
 # vue-test
 
-> A Vue.js project 仿某保险相关业务系统
+> A Vue.js project 仿某保险的微信业务平台，登录、实名、理赔流程等，熟悉vue的组件api和vux组件的使用，nodejs提供前台数据接口，前后台分离。
 
 ## Build Setup
 
