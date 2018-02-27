@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/pages/realcheck/Realcheck.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">src/components/pages/realcheck</a> Realcheck.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/95</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/24</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/25</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/89</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;<span class="cstat-no" title="statement not covered" >t<span class="fstat-no" title="function not covered" >em</span>plate&gt;</span>
+  &lt;div class="realcheck"&gt;
+    &lt;!-- 头部img --&gt;
+<span class="cstat-no" title="statement not covered" >    &lt;Flow :src="top.flowSrc" :rt="top.link"&gt;&lt;/Flow&gt;</span>
+    &lt;!-- 上传id图片 --&gt;
+    &lt;div class="content"&gt;
+      &lt;!-- 上传id正反面 --&gt;
+      &lt;div class=<span class="cstat-no" title="statement not covered" >"item"&gt;</span>
+        &lt;upload-img :upList="upload" ref="upload"&gt;&lt;/upload-img&gt;
+      &lt;/div&gt;<span class="cstat-no" title="statement not covered" ></span>
+    &lt;/div&gt;
+    &lt;!-- 下一步<span class="cstat-no" title="statement not covered" > --&gt;</span>
+    &lt;Button :clickHandler="next" class="next-btn" :text="text"&gt;&lt;/Button&gt;
+  &lt;/div&gt;<span class="cstat-no" title="statement not covered" ></span>
+&lt;/template&gt;
+&lt;script&gt;<span class="cstat-no" title="statement not covered" ></span>
+  import Flow from '../../chunks/Flow'
+  import { R<span class="cstat-no" title="statement not covered" >EALCHECK_SRC } from '../.</span>./../consts'
+  import { showToast, postAPI, failDeal, successDeal, showConfirm } from '../../../util'
+  import UploadIm<span class="cstat-no" title="statement not covered" >g from '../../chunks/UploadImg'</span>
+  import Button from '../../chunks/Button'
+  import bus from <span class="cstat-no" title="statement not covered" >'../../../bus'</span>
+&nbsp;
+  export defau<span class="cstat-no" title="statement not covered" >lt {</span>
+    name: 'Realcheck',
+    data () {<span class="cstat-no" title="statement not covered" ></span>
+      return {
+        top<span class="cstat-no" title="statement not covered" >: {</span>
+          flowSrc: '', // 顶部图片src
+          li<span class="cstat-no" title="statement not covered" >nk: '' // 顶部图片路由</span>
+        },
+        t<span class="fstat-no" title="function not covered" >ext: '验证',<span class="cstat-no" title="statement not covered" ></span></span>
+        upload: [
+          {
+            isUploaded: false, //  id正面是否上传成功
+            upload: function () {},
+            title: '',
+            src: '',
+            zoomIcon: '',
+            delIcon: '',
+            base64: ''
+          },
+          {
+            isUploaded: false, //  id反面是否上传成功
+            upload: function () {},
+            title: '',
+            src: '',
+            zoomIcon: '',
+            delIcon: '',
+<span class="cstat-no" title="statement not covered" >            base64: ''</span>
+          }
+        ],<span class="fstat-no" title="function not covered" ></span>
+<span class="cstat-no" title="statement not covered" >        idInfos: {} // 身份证信息(正反)</span>
+      }
+    },
+    created () {
+      let that = this
+      // 设置头部图片
+      this.top.flowSrc = REALCHECK_SRC
+      this.upload[0].title = '身份证正面'
+      this.upload[0].src <span class="fstat-no" title="function not covered" >= '../.</span>./../static/images/rc-id-front.jpg'
+      this.upload[1].title = '身份证反面'
+      this.upload[1].src = '../../../static/images/rc-id-back.jpg'
+      this.upload[0].zoomIcon = this.upload[1].zoomIcon = '../../../static/images/rc-zoom.png'
+      this.upload[0].delIcon = this.upload[1].delIcon = '../../../static/images/rc-del.png'
+      // 设置上传id正面
+      this.upload[0].upload = function (e) {
+        that.uploadCommon({
+          ev: e, // input<span class="fstat-no" title="function not covered" > change</span>事件
+          emitName: 'front', // 上传发送的事件名
+          type: 1, // 上传正反面类型 1 证明  2 反面
+          successFun: function (result) {
+            successDeal(result,
+              function () {
+                that.upload[0].isUploaded = true
+                // 回显
+                bus.$emit('front', that.upload[0].base64)
+                that.idInfos.front = result.body.data
+                show<span class="fstat-no" title="function not covered" >Toast(th</span>at, '上传成功')
+<span class="cstat-no" title="statement not covered" >                cons</span>ole.log(that.idInfos.front)
+              },
+<span class="cstat-no" title="statement not covered" >              function () {</span>
+<span class="cstat-no" title="statement not covered" >                that.$router.push('/</span>login')
+<span class="cstat-no" title="statement not covered" >              },</span>
+<span class="cstat-no" title="statement not covered" >              function () {</span>
+<span class="cstat-no" title="statement not covered" >                failDeal(that, result)</span>
+<span class="cstat-no" title="statement not covered" >              })</span>
+<span class="cstat-no" title="statement not covered" >          },</span>
+          failFun: function (result) {
+<span class="cstat-no" title="statement not covered" >            failDeal(that, r<span class="fstat-no" title="function not covered" >es</span>ult)</span>
+<span class="cstat-no" title="statement not covered" >          }</span>
+        })
+      }
+      // 设置上传id反面
+      this.upload[1].upload =<span class="fstat-no" title="function not covered" > function (</span>e) {
+        th<span class="cstat-no" title="statement not covered" >at.uploadCommon({<span class="fstat-no" title="function not covered" ></span></span>
+          ev<span class="cstat-no" title="statement not covered" >: e, // input change事件</span>
+          emitName: 'back', // 上传发送的事件名
+          ty<span class="cstat-no" title="statement not covered" >pe: 2, // 上传正反面类型 1 证明  2 反面</span>
+          su<span class="cstat-no" title="statement not covered" >ccessFun: function (result) {</span>
+<span class="cstat-no" title="statement not covered" >            successDeal(result,</span>
+<span class="cstat-no" title="statement not covered" >              function () {</span>
+<span class="fstat-no" title="function not covered" ></span>                that.upload[1].isUploaded = true
+<span class="cstat-no" title="statement not covered" >                bus.$emit('back', that.up</span>load[1].base64)
+<span class="fstat-no" title="function not covered" ></span>                that.idInfos.back = result.body.data
+<span class="cstat-no" title="statement not covered" >                showToast(that, '上传成功')</span>
+                console.log(that.idInfos.back)
+              },
+              function () <span class="fstat-no" title="function not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >                that.$router.push('/login')</span>
+              },
+              function () {
+                failDeal(that, result)
+              })
+<span class="cstat-no" title="statement not covered" >          },<span class="fstat-no" title="function not covered" ></span></span>
+<span class="cstat-no" title="statement not covered" >          failFun: function (result) {</span>
+            failDeal(that, result)
+          }
+        })
+      }<span class="fstat-no" title="function not covered" ></span>
+    },<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+    methods:<span class="cstat-no" title="statement not covered" > {</span>
+      upload<span class="cstat-no" title="statement not covered" >Common: function (options) {</span>
+        let <span class="cstat-no" title="statement not covered" >{ev, type, successFun, failFun} = opti</span>ons
+        for <span class="cstat-no" title="statement not covered" >(let i = 0; i &lt; ev.target.files.leng</span>th; i++) {
+          le<span class="cstat-no" title="statement not covered" >t file = ev.target.files[0]</span>
+          if <span class="fstat-no" title="function not covered" >(!</span>(/^image\/.*$/i.test(file.type))) {
+<span class="cstat-no" title="statement not covered" >            continue // 不是图片 就跳出这一次循环</span>
+          }<span class="fstat-no" title="function not covered" ></span>
+          //<span class="cstat-no" title="statement not covered" > 实例化FileReader API</span>
+          let freader = new FileReader()
+          let that = this
+          freader.readAsDa<span class="fstat-no" title="function not covered" >taURL(fi</span>le)
+<span class="cstat-no" title="statement not covered" >          freader.onload = function (e) {</span>
+            if (type === 1) {
+              that.upload[0].base64 = e.target.result
+            } else if (type === 2) {
+              that.upload[1].base64 = e.target.result
+            }
+            // 上传后台
+            let params = {<span class="fstat-no" title="function not covered" ></span>
+              para<span class="cstat-no" title="statement not covered" >ms: {</span>
+                lastUrl: '/idupload',
+<span class="cstat-no" title="statement not covered" >                data: {</span>
+<span class="cstat-no" title="statement not covered" >                  file: e.targ</span>et.result, // base64
+                  type:<span class="cstat-no" title="statement not covered" > type</span>
+                }<span class="cstat-no" title="statement not covered" ></span>
+              },
+              cont<span class="cstat-no" title="statement not covered" >ext: that<span class="fstat-no" title="function not covered" >,</span></span>
+              succe<span class="cstat-no" title="statement not covered" >ssFun: successFun,</span>
+<span class="cstat-no" title="statement not covered" >              failFun: failFun</span>
+<span class="cstat-no" title="statement not covered" >            }</span>
+            postAPI(params)
+          }
+        }<span class="cstat-no" title="statement not covered" ></span>
+      },<span class="cstat-no" title="statement not covered" ></span>
+      ne<span class="cstat-no" title="statement not covered" >xt: function () {</span>
+<span class="cstat-no" title="statement not covered" >        let that = this<span class="fstat-no" title="function not covered" ></span></span>
+        if<span class="cstat-no" title="statement not covered" > (this.idInfos.front) {</span>
+          if<span class="cstat-no" title="statement not covered" > (this.idInfos.back) {</span>
+            let c<span class="cstat-no" title="statement not covered" >ontentText = '&lt;div style="text-align: left;padding:0 15px;"&lt;h2&gt;&lt;span&gt;姓名：&lt;/span&gt;' + this.idInfos.front.name +</span>
+<span class="cstat-no" title="statement not covered" >              '&lt;/h2&gt;&lt;h2&gt;&lt;span&gt;身份证号：&lt;/span&gt;' + this.id</span>Infos.front.name + '&lt;/h2&gt;' +
+              '&lt;h2&gt;&lt;span&gt;有效日期：&lt;/span&gt;' + this.idInfos.back.start + '-' + this.idInfos.back.end +
+              '&lt;/h2&gt;&lt;h2&gt;&lt;span&gt;发证机关：&lt;/span&gt;' + this.idInfos.back.orgnazation + '&lt;/h2&gt;&lt;/div&gt;'
+            showConfirm<span class="cstat-no" title="statement not covered" >(this, {</span>
+              title: '核实识别信息',
+              content: contentText,
+              confirmText: '确定信息',
+              cancelText: '重新拍摄',
+              cancelHandler: function () {
+                console.log('重新拍摄')
+              },
+              confirmHandler: function () {
+                if (localStorage.getItem('user')) {
+                  let user = JSON.parse(localStorage.getItem('user'))
+                  user.isRealChecked = true
+<span class="cstat-no" title="statement not covered" >                  user.idInfos = {</span>
+                    name: '****',
+                    code: '152103198904202222',
+                    front: that.upload[0].base64,
+<span class="cstat-no" title="statement not covered" >                    back: that.upload[1].base64</span>
+                  }<span class="cstat-no" title="statement not covered" ></span>
+                  localStorage.setItem('user', JSON.stringify(user))
+<span class="cstat-no" title="statement not covered" >                  // 发送已实名认证事件<span class="cstat-no" title="statement not covered" ></span></span>
+                  bus.$emit('realChecked', user)
+                }
+                con<span class="fstat-no" title="function not covered" >sole.</span>log('实名认证成功')
+                t<span class="cstat-no" title="statement not covered" >hat.$</span>router.push({path: '/home'})
+<span class="cstat-no" title="statement not covered" >              }</span>
+<span class="cstat-no" title="statement not covered" >            })</span>
+          } else {<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >            showToast(this, '请上传身份证背面图片', '15em')</span>
+          }
+        } else {
+          showToast(this, '请上传身份证正面图片', '15em')
+        }
+      }<span class="fstat-no" title="function not covered" ></span>
+    },<span class="cstat-no" title="statement not covered" ></span>
+    components: {
+      Flow,<span class="fstat-no" title="function not covered" ></span>
+      REALCHEC<span class="cstat-no" title="statement not covered" >K_SRC,</span>
+      UploadImg,<span class="cstat-no" title="statement not covered" ></span>
+      Button<span class="cstat-no" title="statement not covered" ></span>
+    }<span class="cstat-no" title="statement not covered" ></span>
+  }
+&lt;/script&gt;
+&nbsp;
+&lt;!-- Add "scoped" attribute to limit CSS to this component only --&gt;
+&lt;style lang="scss" type="text/scss"&gt;
+  .realcheck {<span class="cstat-no" title="statement not covered" ></span>
+    .flow.border-half {
+      border-rad<span class="cstat-no" title="statement not covered" >ius: 0;</span>
+      border: none;
+    }<span class="cstat-no" title="statement not covered" ></span>
+    .flow .xim<span class="cstat-no" title="statement not covered" >g-demo {</span>
+      border-radius: 0;
+    }
+    .content {
+      marg<span class="cstat-no" title="statement not covered" >in:auto!important;</span>
+      padding: 15px;
+      background: #ffffff;
+      .i<span class="cstat-no" title="statement not covered" >tem {</span>
+        margin-bottom: 15px;
+      }
+    }
+    .next-btn{
+      margin-top:15px;
+    }
+  }
+&lt;/style&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Feb 16 2018 21:43:47 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

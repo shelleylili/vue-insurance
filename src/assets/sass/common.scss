@@ -1,0 +1,116 @@
+/**** base ***/
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html,body,#app{
+  width:100%;
+  height:100%;
+}
+
+/* thin-border */
+@media (-webkit-min-device-pixel-ratio: 2){
+  .border-half,.menu .flex-item{
+    border-width:0.5px;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 3){
+  .border-half,.menu .flex-item{
+    border-width:0.3px;
+  }
+}
+/* font */
+.f18{
+  //font-size:0.36rem!important;
+  font-size:18px!important;
+}
+.f16{
+  //font-size:0.32rem!important;
+  font-size:16px!important;
+}
+.f15{
+  //font-size:0.3rem!important;
+  font-size:15px!important;
+}
+.f14{
+  //font-size:0.28rem!important;
+  font-size:14px!important;
+}
+.f12{
+  //font-size:0.28rem!important;
+  font-size:12px!important;
+}
+/* 组件动画 */
+/* 左进左出 */
+.left-enter-active{
+  animation-name: left-in;
+  animation-duration: .2s;
+  animation-timing-function:linear;
+}
+.left-leave-active{
+  animation-name: left-out;
+  animation-timing-function:linear;
+  animation-duration: .2s;
+}
+@keyframes left-in {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  50% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes left-out {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}

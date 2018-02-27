@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/pages/mine/ServiceCenter.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">src/components/pages/mine</a> ServiceCenter.vue
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/32</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/25</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;<span class="cstat-no" title="statement not covered" >t<span class="fstat-no" title="function not covered" >em</span>plate&gt;</span>
+  &lt;div class="ServiceCenter"&gt;
+    &lt;!-- 下拉加载更多 上拉刷新 --&gt;
+<span class="cstat-no" title="statement not covered" >    &lt;scroller lock-x scrollbar-y use-pullup use-pulldown :height="height" @on-pullup-loading="loadMore" @on-pulldown-loading="refresh" v-model="status" ref="scroller"&gt;</span>
+      &lt;div class="box2"&gt;
+        &lt;group :title="HTitle" &gt;
+          &lt;cell v-for="(q,index) in list" :key="index" :link="q.router" :title="q.desc"&gt;&lt;/cell&gt;
+        &lt;/g<span class="cstat-no" title="statement not covered" >roup&gt;</span>
+      &lt;/div&gt;
+      &lt;!--p<span class="cstat-no" title="statement not covered" >ullup slot--&gt;</span>
+      &lt;div slot="pullup" class="xs-plugin-pullup-container xs-plugin-pullup-up" style="position: absolute; width: 100%; height: 40px; bottom: -40px; text-align: center;"&gt;
+        &lt;span v-show="status.pullupStatus === 'default'"&gt;&lt;/span&gt;
+        &lt;span class="pullup-arrow" v-show="status.pullupStatus === 'down' || status.pullupStatus === 'up'" :class="{'rotate': status.pullupStatus === 'up'}"&gt;↑&lt;/span&gt;
+        &lt;span v-show="status.pullupStatus === 'loading'"&gt;&lt;spinner type="ios-small"&gt;&lt;/spinner&gt;&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/scroller&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+import { Tabbar, TabbarItem, Group, Cell, Panel, Scroller, Divider, XSwitch, Spinner } from 'vux'
+import { getQuestions } from '../../../api'
+&nbsp;
+export default {
+  name: 'ServiceCenter',
+  data () {
+    return {
+      HTitle: '热门问题',
+      list: [],
+      page: 1,
+      pullupEnabled: true,
+<span class="cstat-no" title="statement not covered" >      status: {</span>
+        pullupStatus: 'default',
+        pulldownS<span class="fstat-no" title="function not covered" >tatus</span>: 'default'
+<span class="cstat-no" title="statement not covered" >      },</span>
+      height: (window.innerHeight - 100) + 'px'
+    }
+  },
+  created () {
+    getQuestions(this, 'list', this.page)
+  },
+  methods: {
+    loadMore () {
+      setTimeout(() =&gt; {
+        this.page += 1
+        // 获取商家列表
+        getQuestions<span class="fstat-no" title="function not covered" >(this, '</span>list', this.page)
+<span class="cstat-no" title="statement not covered" >        setTimeout(() =&gt; {</span>
+          this.$refs.scroller.donePullup()
+        }, 10)
+      }, 2000)
+    },<span class="fstat-no" title="function not covered" ></span>
+    refresh () {<span class="cstat-no" title="statement not covered" ></span>
+      setTimeout(() =&gt; {
+<span class="cstat-no" title="statement not covered" >        this.page<span class="fstat-no" title="function not covered" > =</span> 1</span>
+<span class="cstat-no" title="statement not covered" >        getQuestions(this</span>, 'list', this.page)
+        this.$nextTick(() =&gt; {
+<span class="cstat-no" title="statement not covered" >          setTimeout(() =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >            this.$r<span class="fstat-no" title="function not covered" >ef</span>s.scroller.donePulldown()</span>
+<span class="cstat-no" title="statement not covered" >            this.pullupEnabled &amp;&amp; this.$refs.</span>scroller.enablePullup()
+          }, 10)
+        })
+      }, 2000)
+    }<span class="fstat-no" title="function not covered" ></span>
+  },<span class="cstat-no" title="statement not covered" ></span>
+  components: {
+    Ta<span class="cstat-no" title="statement not covered" >bbar,<span class="fstat-no" title="function not covered" ></span></span>
+    Tabb<span class="cstat-no" title="statement not covered" >arItem,</span>
+    Grou<span class="cstat-no" title="statement not covered" >p,</span>
+    Cell<span class="cstat-no" title="statement not covered" >,<span class="fstat-no" title="function not covered" ></span></span>
+    Panel,<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+    Scroller<span class="cstat-no" title="statement not covered" >,</span>
+    Divider,<span class="cstat-no" title="statement not covered" ></span>
+    XSwitch,
+    Spinner
+  }
+}
+&lt;/script&gt;
+&nbsp;
+&lt;!-- Add "scoped" attribute to limit CSS to this component only --&gt;
+&lt;style scoped&gt;
+&lt;/style&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Feb 16 2018 21:43:47 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>
