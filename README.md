@@ -1,17 +1,20 @@
 # vue-test
 
-> A Vue.js project
+> A Vue.js project 仿某保险相关业务系统
 
 ## Build Setup
 
 ``` bash
-# install dependencies
+# install dependencies 下载依赖
 npm install
 
-# serve with hot reload at localhost:8080
+# server api support 后台接口依赖需要启动
+cd server
+npm start
+# serve with hot reload at localhost:8080 启动开发模式
 npm run dev
 
-# build for production with minification
+# build for production with minification 启动build生成项目文件
 npm run build
 
 # build for production and view the bundle analyzer report
